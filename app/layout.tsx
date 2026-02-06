@@ -5,7 +5,10 @@ import { AuthStatus } from "@/components/AuthStatus";
 
 export const metadata = {
   title: "CodeArmor AI Security Dashboard",
-  description: "Security-hardened baseline with scoring and Supabase-ready integration."
+  description: "Security-hardened baseline with scoring and Supabase-ready integration.",
+  icons: {
+    icon: '/favicon.png',
+  }
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
