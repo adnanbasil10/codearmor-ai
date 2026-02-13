@@ -2,6 +2,7 @@ import "./globals.css";
 import type { ReactNode } from "react";
 import { Providers } from "@/components/Providers";
 import { AuthStatus } from "@/components/AuthStatus";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "CodeArmor AI Security Dashboard",
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Providers>
           {children}
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
